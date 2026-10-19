@@ -1,0 +1,105 @@
+.pp-wardrobe {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 0.25rem 0 1rem;
+}
+
+.pp-wardrobe-balance {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: flex-start;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(180, 160, 220, 0.45);
+  font-weight: 700;
+  color: #4a3f66;
+}
+
+.pp-wardrobe-balance-icon {
+  font-size: 1.2rem;
+}
+
+.pp-wardrobe-slot-title {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #5b4d7d;
+}
+
+.pp-wardrobe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
+  gap: 0.6rem;
+}
+
+.pp-wardrobe-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.7rem 0.5rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.55);
+  border: 2px solid transparent;
+  text-align: center;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.pp-wardrobe-item.is-equipped {
+  border-color: #b79ced;
+  box-shadow: 0 0 0 3px rgba(183, 156, 237, 0.25), 0 4px 14px rgba(120, 90, 180, 0.18);
+}
+
+.pp-wardrobe-icon {
+  font-size: 2rem;
+  line-height: 1;
+  filter: drop-shadow(0 2px 3px rgba(90, 70, 140, 0.25));
+}
+
+.pp-wardrobe-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #4a3f66;
+}
+
+.pp-wardrobe-price {
+  font-size: 0.75rem;
+  color: #7a6a99;
+}
+
+.pp-wardrobe-btn {
+  margin-top: 0.25rem;
+  padding: 0.35rem 0.7rem;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #c9a8f0, #9fd8f5);
+  color: #3d3357;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.12s ease, opacity 0.12s ease;
+}
+
+.pp-wardrobe-btn:hover:not(:disabled) {
+  transform: scale(1.05);
+}
+
+.pp-wardrobe-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.pp-wardrobe-btn.is-on {
+  background: linear-gradient(135deg, #ffe9a8, #ffc7e3);
+}
+
+.pp-wardrobe-note {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #7a6a99;
+  text-align: center;
+}

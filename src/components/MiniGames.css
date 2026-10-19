@@ -1,0 +1,128 @@
+/* Pixie Palz — mini-game upgrades: intro screens, levels, North Star card backs */
+
+.pp-mini-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.pp-mini-intro h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #3d3357;
+}
+
+.pp-mini-intro-star {
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--star-color);
+  text-shadow: 0 0 12px var(--star-color), 0 0 28px var(--star-color);
+  animation: north-star-twinkle 1.8s ease-in-out infinite;
+}
+
+.pp-mini-line {
+  margin: 0;
+  font-weight: 600;
+  color: #4a3f66;
+}
+
+.pp-mini-howto {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #6a5a8a;
+  max-width: 300px;
+}
+
+.pp-mini-reward {
+  margin: 0.2rem 0 0;
+  font-size: 0.9rem;
+  color: #4a3f66;
+}
+
+.pp-mini-reward b {
+  color: #3d3357;
+}
+
+.pp-start-btn {
+  margin-top: 0.5rem;
+  font-size: 1.05rem;
+  padding: 0.8rem 2.2rem;
+  animation: pp-pulse 2s ease-in-out infinite;
+}
+
+.pp-mini-level-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: center;
+  margin-top: 0.4rem;
+}
+
+.pp-mini-level {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #7c5cd6;
+  background: rgba(183, 156, 237, 0.18);
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+}
+
+/* North Star card backs — glowing, sparkly, tinted to the pet's element */
+.pp-north-star {
+  display: inline-block;
+  font-size: 1.9rem;
+  line-height: 1;
+  color: var(--star-color);
+  text-shadow:
+    0 0 8px var(--star-color),
+    0 0 20px var(--star-color);
+  animation: north-star-twinkle 1.6s ease-in-out infinite;
+}
+
+.pp-orb .pp-north-star {
+  pointer-events: none;
+}
+
+@keyframes north-star-twinkle {
+  0%, 100% {
+    opacity: 0.75;
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.18) rotate(12deg);
+  }
+}
+
+.pp-glow.lit {
+  box-shadow: 0 0 18px 4px var(--star-color, #ffd76a);
+  border-color: var(--star-color, #ffd76a);
+}
+
+/* Moon Dust wallet chip inside care screens */
+.pp-wallet {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(180, 160, 220, 0.45);
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: #4a3f66;
+}
+
+.pp-wallet i {
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.pp-wallet small {
+  font-weight: 600;
+  font-size: 0.65rem;
+  color: #7a6a99;
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="orb" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#e8d5ff"/>
+      <stop offset="60%" stop-color="#b79df0"/>
+      <stop offset="100%" stop-color="#7c5cbf"/>
+    </radialGradient>
+  </defs>
+  <circle cx="50" cy="50" r="42" fill="url(#orb)"/>
+  <circle cx="38" cy="38" r="10" fill="#ffffff" opacity="0.5"/>
+  <text x="50" y="68" font-size="36" text-anchor="middle">✨</text>
+</svg>
